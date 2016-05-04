@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
-using Application.LogicLayer.FoodLogic.FoodClasses.Enums;
-using Application.LogicLayer.FoodLogic.Interfaces;
+using Application.LogicLayer.Food.Enums;
+using Application.LogicLayer.Food.FoodClasses;
+using Application.LogicLayer.Food.Interfaces;
 
-namespace Application.LogicLayer.FoodLogic.FoodClasses.FoodTypes
+namespace Application.LogicLayer.Food.FoodTypes
 {
     class FoodBase : IFood
     {

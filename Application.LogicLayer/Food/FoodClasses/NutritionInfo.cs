@@ -1,8 +1,8 @@
 ﻿using System;
-using Application.LogicLayer.FoodLogic.FoodClasses.NutritionGroups;
-using Application.LogicLayer.FoodLogic.Interfaces;
+using Application.LogicLayer.Food.Interfaces;
+using Application.LogicLayer.Food.NutritionGroups;
 
-namespace Application.LogicLayer.FoodLogic.FoodClasses
+namespace Application.LogicLayer.Food.FoodClasses
 {
     class NutritionInfo : INutritionInfo
     {

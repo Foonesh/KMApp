@@ -1,4 +1,6 @@
-﻿namespace Application.LogicLayer.FoodLogic.FoodClasses.NutritionGroups
+﻿using Application.LogicLayer.Food.FoodClasses;
+
+namespace Application.LogicLayer.Food.NutritionGroups
 {
     class Proximates
     {

@@ -19,28 +19,28 @@ namespace Application.LogicLayer.ImplementedClass
     {
         public Person()
         {
-            
+
         }
-       public Person(IUsNavyIndexData dataForNavyIdnex)
-       {
-           DataForCalculatedNIndex = dataForNavyIdnex;
-       }
+        public Person(IUsNavyIndexData dataForNavyIdnex)
+        {
+            DataForCalculatedNIndex = dataForNavyIdnex;
+        }
         //=====podstawowe dane
         public float Weight { get; set; }
         public float Heigh { get; set; }
 
-         public int Age { get; set; }
+        public int Age { get; set; }
 
-        public Sex sex { get; set; }        
-       
-                           
-
-        public IUsNavyIndexData DataForCalculatedNIndex { get; set; } 
+        public Sex Sex { get; set; }
 
 
-              
 
-        
+        public IUsNavyIndexData DataForCalculatedNIndex { get; set; }
+
+
+
+
+
 
 
 
@@ -48,7 +48,7 @@ namespace Application.LogicLayer.ImplementedClass
 
 
 
-        
+
 
     }
 }

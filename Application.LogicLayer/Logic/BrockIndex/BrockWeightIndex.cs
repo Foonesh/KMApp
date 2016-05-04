@@ -15,7 +15,7 @@ namespace Application.LogicLayer.Logic.BrockIndex
         public override ICalculatedData CalculateWeightIndex(Person person)
         {
             float Index;
-            if (person.sex == Sex.Female)
+            if (person.Sex == Sex.Female)
             {
                 Index = (float) ((person.Heigh - 100)*0.85);
             }

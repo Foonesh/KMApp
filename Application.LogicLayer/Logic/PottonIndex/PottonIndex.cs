@@ -14,7 +14,7 @@ namespace Application.LogicLayer.Logic.PottonIndex
         public override ICalculatedData CalculateWeightIndex(Person person)
         {
             float Index;
-            if (person.sex == Sex.Female)
+            if (person.Sex == Sex.Female)
                 Index = person.Heigh - 100 - (person.Heigh - 100)/10;
             else
             {

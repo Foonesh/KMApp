@@ -14,7 +14,7 @@ namespace Application.LogicLayer.Logic.LorentzIndex
        public override ICalculatedData CalculateWeightIndex(Person person)
        {
            float Index;
-            if (person.sex == Sex.Female)
+            if (person.Sex == Sex.Female)
             {
                 Index = (float)(person.Heigh - 100 - 0.5 * (person.Heigh - 150));
             }

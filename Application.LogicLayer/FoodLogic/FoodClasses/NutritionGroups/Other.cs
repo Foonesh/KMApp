@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.LogicLayer
+namespace Application.LogicLayer.FoodLogic.FoodClasses.NutritionGroups
 {
-    public class Class1
+    class Other
     {
+        public Nutrient Caffeine { get; set; }
     }
 }

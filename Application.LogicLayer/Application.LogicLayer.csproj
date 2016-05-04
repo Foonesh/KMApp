@@ -54,7 +54,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\BodyWeightIndex.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="FoodLogic\FoodClasses\Enums\FoodGroup.cs" />
+    <Compile Include="FoodLogic\FoodClasses\Enums\Unit.cs" />
+    <Compile Include="FoodLogic\FoodClasses\FoodTypes\Beverage.cs" />
+    <Compile Include="FoodLogic\FoodClasses\FoodTypes\FoodBase.cs" />
+    <Compile Include="FoodLogic\FoodClasses\Nutrient.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\AminoAcids.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\Lipids.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\Minerals.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\Other.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\Vitamins.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionInfo.cs" />
+    <Compile Include="FoodLogic\FoodClasses\NutritionGroups\Proximates.cs" />
+    <Compile Include="FoodLogic\Interfaces\INutritionInfo.cs" />
+    <Compile Include="FoodLogic\Interfaces\IFood.cs" />
     <Compile Include="HelpersData\UsNavyIndexData.cs" />
     <Compile Include="ImplementedClass\Person.cs" />
     <Compile Include="Interfaces\IBodyWeightIndex.cs" />

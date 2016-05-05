@@ -1,4 +1,4 @@
-﻿namespace Application.LogicLayer.Food.Interfaces
+﻿namespace Food.Food.Interfaces
 {
     interface INutritionInfo
     {

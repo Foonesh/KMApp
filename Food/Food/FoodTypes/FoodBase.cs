@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
-using Application.LogicLayer.Food.Enums;
-using Application.LogicLayer.Food.FoodClasses;
-using Application.LogicLayer.Food.Interfaces;
+using Food.Food.Enums;
+using Food.Food.FoodClasses;
+using Food.Food.Interfaces;
 
-namespace Application.LogicLayer.Food.FoodTypes
+namespace Food.Food.FoodTypes
 {
     class FoodBase : IFood
     {
         public string Name { get; set; }
+        //grupa zawarta w polu albo osobna klasa dla każdej, zależy jak lepiej dla bazy
         public FoodGroup FoodGroup { get; set; }
         public NutritionInfo NutritionInfo { get; set; }
         public List<string> Tags { get; set; }

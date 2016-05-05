@@ -1,4 +1,4 @@
-﻿namespace Application.LogicLayer.Food.FoodTypes
+﻿namespace Food.Food.FoodTypes
 {
     class Beverage : FoodBase
     {

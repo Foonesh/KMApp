@@ -1,6 +1,6 @@
-﻿using Application.LogicLayer.Food.FoodClasses;
+﻿using Food.Food.FoodClasses;
 
-namespace Application.LogicLayer.Food.NutritionGroups
+namespace Food.Food.NutritionGroups
 {
     class Lipids
     {

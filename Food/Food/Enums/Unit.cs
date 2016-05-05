@@ -1,4 +1,4 @@
-﻿namespace Application.LogicLayer.Food.Enums
+﻿namespace Food.Food.Enums
 {
     enum Unit
     {

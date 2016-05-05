@@ -1,6 +1,6 @@
-﻿using Application.LogicLayer.Food.Enums;
+﻿using Food.Food.Enums;
 
-namespace Application.LogicLayer.Food.FoodClasses
+namespace Food.Food.FoodClasses
 {
     class Nutrient
     {

@@ -12,7 +12,7 @@ namespace ConsoleTests
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DataDownloader.DownloadItemData("blabla").Result);
+            Console.WriteLine(DataDownloader.DownloadItemData("01009"));
             Console.ReadKey();
         }
     }

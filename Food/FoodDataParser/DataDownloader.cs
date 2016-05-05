@@ -15,32 +15,52 @@ namespace Food.FoodDataParser
         //API zwraca JSON
 
 
-        public static async Task<string> DownloadItemData(string itemName)
+        /// <summary>
+        /// Downloads and returns the JSON data of a specified product from http://api.nal.usda.gov/ndb/reports/
+        /// </summary>
+        /// <param name="itemNumber">Number of item to download </param>
+        /// <param name="type">Report type: [b]asic or [f]ull or [s]tats</param>
+        /// <param name="apiKey">Api key from ndb.nal.usda.gov</param>
+        /// <returns></returns>
+        public static string DownloadItemData(
+            string itemNumber,
+            string type = "b",
+            string apiKey = "T21BmgS4azRMC9kNqvTZI6LLs86tdoS71knqUrCd")
+        {
+            return DownloadItemDataTask(itemNumber, type, apiKey).Result;
+        }
+
+        public static async Task<string> DownloadItemDataTask(
+            string itemNumber,
+            string type = "b",
+            string apiKey = "T21BmgS4azRMC9kNqvTZI6LLs86tdoS71knqUrCd")
         {
             using (HttpClient client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("api_key", "T21BmgS4azRMC9kNqvTZI6LLs86tdoS71knqUrCd");
-                HttpContent requestContent =
-                    new FormUrlEncodedContent(new[]
-                    {
-                        new KeyValuePair<string, string>("API_KEY", "T21BmgS4azRMC9kNqvTZI6LLs86tdoS71knqUrCd"),
-                        new KeyValuePair<string, string>("ndbno", "01009"),
-                        new KeyValuePair<string, string>("type", "f"),
-                        new KeyValuePair<string, string>("api_key", "T21BmgS4azRMC9kNqvTZI6LLs86tdoS71knqUrCd")
-                    });
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("api_key", apiKey);
+                HttpContent requestContent = new FormUrlEncodedContent(new KeyValuePair<string, string>[0]);
 
                 requestContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-                HttpResponseMessage response = await client.PostAsync("http://api.nal.usda.gov/ndb/reports", requestContent);
+                StringBuilder requestMessage = new StringBuilder();
+                requestMessage.Append("http://api.nal.usda.gov/ndb/reports/?")
+                    .Append("ndbno=")
+                    .Append(itemNumber)
+                    .Append("&type=")
+                    .Append(type)
+                    .Append("&format=json")
+                    .Append("&api_key=")
+                    .Append(apiKey);
+
+                HttpResponseMessage response = await client.PostAsync(requestMessage.ToString(), requestContent);
 
                 using (StreamReader reader = new StreamReader(await response.Content.ReadAsStreamAsync()))
                 {
-                    // Write the output.
                     string result = await reader.ReadToEndAsync();
                     return result;
                 }
             }
-            
+
         }
     }
 }

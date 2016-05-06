@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Data.Entity;
+using System.Linq;
 using System.Net;
+using Application.DataLogicLayer;
 using HtmlAgilityPack;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -10,19 +13,10 @@ namespace Applicaiton.Logic.Test
     {
         [TestMethod]
         public void TestMethod1()
-        {
-            var z = new HtmlWeb().Load("http://zdrowezywienie.edu.pl/tabelekaloryczne.htm");
-               HtmlDocument doc = new HtmlDocument();
-            
+        {   
+            DatabaseModel model = new DatabaseModel();
 
-            string x = z.DocumentNode.OuterHtml;
-
-            var h = z.DocumentNode.SelectNodes("//td[contains(@class,'l')]");
-
-            foreach (var p in h)
-            {
-                string a = p.InnerHtml;
-            }
+            var z = model.ABBREV.Select(it => it.Energ_Kcal).FirstOrDefault();
 
         }
     }

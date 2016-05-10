@@ -1,4 +1,5 @@
-﻿
+﻿namespace Models
+{
     public class Navbar
     {
         public int Id { get; set; }
@@ -12,3 +13,4 @@
         public int parentId { get; set; }
         public bool isParent { get; set; }
     }
+}

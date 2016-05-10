@@ -18,6 +18,13 @@ namespace Applicaiton.Logic.Test
 
             var z = model.ABBREV.Select(it => it.Energ_Kcal).FirstOrDefault();
 
+            var test = model.ABBREV.Take(5);
+
+            foreach (var item in test)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }

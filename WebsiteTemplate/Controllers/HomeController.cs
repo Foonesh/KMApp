@@ -70,5 +70,10 @@ namespace Controllers
             return View("Login");
         }
 
+        public ActionResult MyUser()
+        {
+            return View("MyUser");
+        }
+
     }
 }

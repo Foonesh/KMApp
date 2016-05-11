@@ -57,10 +57,16 @@
   <ItemGroup>
     <Compile Include="Abstract\BodyWeightIndex.cs" />
     <Compile Include="HelpersData\UsNavyIndexData.cs" />
+    <Compile Include="ImplementedClass\AdultNutrients.cs" />
+    <Compile Include="ImplementedClass\BabyNutrients.cs" />
+    <Compile Include="ImplementedClass\NutrientsFactory.cs" />
+    <Compile Include="ImplementedClass\OldNutrients.cs" />
     <Compile Include="ImplementedClass\Person.cs" />
+    <Compile Include="ImplementedClass\YoungNutrients.cs" />
     <Compile Include="Interfaces\IBodyWeightIndex.cs" />
     <Compile Include="Interfaces\ICalculatedData.cs" />
     <Compile Include="Interfaces\IUsNavyIndexData.cs" />
+    <Compile Include="Interfaces\PersonInterfaces\INutrients.cs" />
     <Compile Include="Logic\BernHardIndex\BernhardCalcuatedData.cs" />
     <Compile Include="Logic\BernHardIndex\BernhardWeightIndex.cs" />
     <Compile Include="Logic\BMI\BMICalculatedData.cs" />
@@ -78,6 +84,7 @@
     <Compile Include="Logic\USLifeInsurenceIndex\UsLifeInsuranceCalcData.cs" />
     <Compile Include="Logic\UsNavyFatIndex\CalculatedNavyIndexData.cs" />
     <Compile Include="Logic\UsNavyFatIndex\UsNavyFatIndex.cs" />
+    <Compile Include="ImplementedClass\PersonRequirements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

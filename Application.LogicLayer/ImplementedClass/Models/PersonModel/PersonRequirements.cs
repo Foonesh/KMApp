@@ -4,9 +4,17 @@ namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     public class PersonRequirements
     {
-        public PersonRequirements(int age, float weight, float heigth)
+        public PersonRequirements(Sex sex, int age, double weight, double heigth)
         {
+            Sex = sex;
+
             Age = age;
+
+            Weight = weight;
+
+            Heigth = heigth;
+            //zmienić
+            PhysicalActivityCoeff = 1;
 
             Nutrients = NutrientsFactory.Resolve(age, weight, heigth);
 
@@ -14,9 +22,9 @@ namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 
         public Sex Sex { get; set; }
         public int Age { get; set; }
-        public float Weight { get; set; }
+        public double Weight { get; set; }
         //wzrost w metrach (do wyliczeń w CaloriesCalculator.cs
-        public float Heigth { get; set; }
+        public double Heigth { get; set; }
         public double PhysicalActivityCoeff { get; set; }
 
         //domyślnie będziemy to zapisywać do bazy z innymi danymi użytkownika za pierwszym wywołaniem

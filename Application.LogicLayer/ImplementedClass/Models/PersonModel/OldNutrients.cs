@@ -4,7 +4,7 @@ namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     class OldNutrients : INutrients
     {
-        public OldNutrients(int age, float weight, float heigth)
+        public OldNutrients(int age, double weight, double heigth)
         {
             //set values
             CalculateRequirements(age);

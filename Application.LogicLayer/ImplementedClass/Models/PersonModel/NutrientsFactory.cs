@@ -7,7 +7,7 @@ namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     public static class NutrientsFactory
     {
-        public static INutrients Resolve(int age, float weight, float height)
+        public static INutrients Resolve(int age, double weight, double height)
         {
             //To albo zwykła ifologia (jest poniżej)
             

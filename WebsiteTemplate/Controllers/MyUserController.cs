@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Application.DataLogicLayer;
+using Application.LogicLayer.ImplementedClass;
 using Application.LogicLayer.ImplementedClass.Models.PersonModel;
 
 namespace Controllers
@@ -11,7 +12,7 @@ namespace Controllers
     public class MyUserController : Controller
     {
         //temporary model
-        private PersonRequirements _person = new PersonRequirements(26, 75, 193);
+        private PersonRequirements _person = new PersonRequirements(Sex.Male, 26, 75, 193);
         // GET: MyUser
         public ActionResult Index()
         {

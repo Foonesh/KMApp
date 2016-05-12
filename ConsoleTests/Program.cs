@@ -4,6 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.LogicLayer.ImplementedClass;
+using Application.LogicLayer.ImplementedClass.Models.PersonModel;
 using Food.FoodDataParser;
 using Newtonsoft.Json;
 
@@ -14,7 +16,9 @@ namespace ConsoleTests
     {
         static void Main(string[] args)
         {
-            string s = DataDownloader.DownloadItemData("01009");
+            PersonRequirements person = new PersonRequirements(Sex.Male, 14, 70, 1.95);
+
+            Console.WriteLine(person.CaloriesRequirement);
 
 
             Console.WriteLine("done");

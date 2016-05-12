@@ -12,8 +12,8 @@ namespace Application.LogicLayer.ImplementedClass
         public static INutrients Resolve(int age, float weight, float height)
         {
             //To albo zwykła ifologia (jest poniżej)
-            /*
-            Dictionary<string, int> ageRangesDictionary = new Dictionary<string, int>()
+            
+            Dictionary<string, int> ageRangesDictionary = new Dictionary<string, int>
             {
                 {"Baby", 4},
                 {"Young", 16},
@@ -21,7 +21,7 @@ namespace Application.LogicLayer.ImplementedClass
                 {"Old", 200}
             };
 
-            INutrients resultNutrients;
+            INutrients resultNutrients = null;
 
             var ageSwitch = new Dictionary<Func<int, bool>, Action>
             {
@@ -43,7 +43,8 @@ namespace Application.LogicLayer.ImplementedClass
             ageSwitch.First(item => item.Key(age)).Value.Invoke();
 
             return resultNutrients;
-            */
+
+            /*
             const int babyAge = 4;
             const int youngAge = 16;
             const int adultAge = 50;
@@ -67,7 +68,7 @@ namespace Application.LogicLayer.ImplementedClass
             }
             
             throw new ArgumentOutOfRangeException(nameof(age));
-            
+            */
 
         }
     }

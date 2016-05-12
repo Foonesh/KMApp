@@ -7,7 +7,7 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.BrockIndex
 {
-    class BrockCalculatedData:ICalculatedData
+   public  class BrockCalculatedData:ICalculatedData
     {
         public BrockCalculatedData(float Index)
         {

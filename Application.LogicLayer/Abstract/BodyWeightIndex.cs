@@ -11,7 +11,7 @@ namespace Application.LogicLayer.Abstract
     public abstract class BodyWeightIndex :IBodyWeightIndex
     {
 
-        public abstract ICalculatedData CalculateWeightIndex(Person person);
+        public abstract ICalculatedData CalculateWeightIndex(PersonViewModel person);
 
     }
 }

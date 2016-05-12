@@ -9,7 +9,7 @@ namespace Application.LogicLayer.Interfaces
 {
    public interface IBodyWeightIndex
    {
-       ICalculatedData CalculateWeightIndex(Person person); //berzemy pod uwage zwierzeta? xD
+       ICalculatedData CalculateWeightIndex(PersonViewModel person); //berzemy pod uwage zwierzeta? xD
 
    }
 }

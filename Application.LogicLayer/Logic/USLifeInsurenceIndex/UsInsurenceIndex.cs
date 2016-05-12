@@ -9,9 +9,9 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.USLifeInsurenceIndex
 {
-    class UsInsurenceIndex :BodyWeightIndex
+    public class UsInsurenceIndex :BodyWeightIndex
     {
-        public override ICalculatedData CalculateWeightIndex(Person person)
+        public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {
             float Index=(float) (50+0.75*(person.Heigh - 150));
 

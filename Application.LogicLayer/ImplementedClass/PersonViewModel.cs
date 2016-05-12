@@ -15,13 +15,13 @@ namespace Application.LogicLayer.ImplementedClass
         Male
 
     };
-    public class Person
+    public class PersonViewModel
     {
-        public Person()
+        public PersonViewModel()
         {
 
         }
-        public Person(IUsNavyIndexData dataForNavyIdnex)
+        public PersonViewModel(IUsNavyIndexData dataForNavyIdnex)
         {
             DataForCalculatedNIndex = dataForNavyIdnex;
         }

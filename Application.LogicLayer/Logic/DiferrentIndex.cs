@@ -13,7 +13,7 @@ namespace Application.LogicLayer.Logic
     {
         public ICalculatedData dupa(BodyWeightIndex index)
         {
-           return index.CalculateWeightIndex(new Person());
+           return index.CalculateWeightIndex(new PersonViewModel());
         }
 
     }

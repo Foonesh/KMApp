@@ -12,7 +12,7 @@ namespace Application.LogicLayer.Logic.UsNavyFatIndex
     public class UsNavyFatIndex:BodyWeightIndex
     {    
          
-        public override ICalculatedData CalculateWeightIndex(Person person)
+        public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {
 
             return null;

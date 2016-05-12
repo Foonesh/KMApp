@@ -11,10 +11,11 @@ namespace Application.LogicLayer.Logic.BMI
 {
    public class BMIWeightIndex:BodyWeightIndex
     {
-       public override ICalculatedData CalculateWeightIndex(Person person)
+       public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
        {
-
-           float Index = person.Weight/((person.Heigh/100)*(person.Weight/100));
+           //float divider = ;
+              
+           float Index = person.Weight/((person.Heigh/100)*(person.Heigh/100));
            return new BMICalculatedData(Index);
        }
     }

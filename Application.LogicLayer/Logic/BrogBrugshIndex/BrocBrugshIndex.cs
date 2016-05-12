@@ -10,11 +10,11 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.BrogBrugshIndex
 {
-    public class BrocBrugshIndex:BodyWeightIndex
+    public  class BrocBrugshIndex:BodyWeightIndex
     {
        // Dictionary<> 
 
-        public override ICalculatedData CalculateWeightIndex(Person person)
+        public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {
             float Index=new float();
             if (person.Heigh >= 155 && person.Heigh < 165)

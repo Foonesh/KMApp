@@ -61,7 +61,7 @@
     <Compile Include="ImplementedClass\BabyNutrients.cs" />
     <Compile Include="ImplementedClass\NutrientsFactory.cs" />
     <Compile Include="ImplementedClass\OldNutrients.cs" />
-    <Compile Include="ImplementedClass\Person.cs" />
+    <Compile Include="ImplementedClass\PersonViewModel.cs" />
     <Compile Include="ImplementedClass\YoungNutrients.cs" />
     <Compile Include="Interfaces\IBodyWeightIndex.cs" />
     <Compile Include="Interfaces\ICalculatedData.cs" />

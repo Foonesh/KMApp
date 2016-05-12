@@ -11,7 +11,7 @@ namespace Application.LogicLayer.Logic.BernHardIndex
 {
     class BernhardWeightIndex:BodyWeightIndex
     {
-        public override ICalculatedData CalculateWeightIndex(Person person)
+        public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {
             float Index = person.Heigh*person.DataForCalculatedNIndex.chest/240;
 

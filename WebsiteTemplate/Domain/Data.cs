@@ -26,6 +26,7 @@ public class Data
             menu.Add(new Navbar { Id = 17, nameOption = "Blank Page", controller = "Home", action = "Blank", status = true, isParent = false, parentId = 16 });
             menu.Add(new Navbar { Id = 18, nameOption = "Login Page", controller = "Home", action = "Login", status = true, isParent = false, parentId = 16 });
             menu.Add(new Navbar { Id = 19, nameOption = "MyUser", controller = "Home", action="MyUser", status=true, isParent=false});
+            menu.Add(new Navbar { Id = 19, nameOption = "CalcData", controller = "UserIndexCalc", action="BasicCalcData", status=true, isParent=false});
 
             return menu.ToList();
         }

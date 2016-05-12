@@ -10,9 +10,9 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.BrockIndex
 {
-    public class BrockWeightIndex:BodyWeightIndex
+    public  class BrockWeightIndex:BodyWeightIndex
     {
-        public override ICalculatedData CalculateWeightIndex(Person person)
+        public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {
             float Index;
             if (person.Sex == Sex.Female)

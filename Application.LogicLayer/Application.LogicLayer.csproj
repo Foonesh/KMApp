@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Abstract\BodyWeightIndex.cs" />
     <Compile Include="HelpersData\UsNavyIndexData.cs" />
+    <Compile Include="ImplementedClass\CaloriesCalculator.cs" />
     <Compile Include="ImplementedClass\Models\PersonModel\AdultNutrients.cs" />
     <Compile Include="ImplementedClass\Models\PersonModel\BabyNutrients.cs" />
     <Compile Include="ImplementedClass\Models\PersonModel\NutrientsFactory.cs" />

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.LogicLayer.Interfaces.PersonInterfaces;
+﻿using Application.LogicLayer.Interfaces.PersonInterfaces;
 
-namespace Application.LogicLayer.ImplementedClass
+namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     class BabyNutrients:INutrients
     {

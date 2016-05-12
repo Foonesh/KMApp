@@ -4,27 +4,27 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Application.DataLogicLayer;
+using Application.LogicLayer.ImplementedClass.Models.PersonModel;
 
 namespace Controllers
 {
     public class MyUserController : Controller
     {
+        //temporary model
+        private PersonRequirements _person = new PersonRequirements(26, 75, 193);
         // GET: MyUser
         public ActionResult Index()
         {
             return View();
         }
-
-        public string GetData()
-        {
-            return "[[1,\"a\"],[2,\"b\"],[3,\"c\"]]";
-        }
-
+        
         public ActionResult Get()
         {
             using (DatabaseModel model = new DatabaseModel())
             {
                 //var res = model.ABBREV.Select(item => item.Energ_Kcal > 10).Take(5).ToList();
+
+
 
                 var alldata = model.ABBREV.First();
                 var calciumMg = alldata.Calcium__mg_;

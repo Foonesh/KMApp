@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Application.LogicLayer.Interfaces.PersonInterfaces;
 
-namespace Application.LogicLayer.ImplementedClass
+namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     public static class NutrientsFactory
     {

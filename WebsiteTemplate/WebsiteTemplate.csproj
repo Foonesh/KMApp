@@ -927,12 +927,12 @@
     <Content Include="Views\Home\Grid.cshtml" />
     <Content Include="Views\Home\Blank.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\MyUser.cshtml" />
+    <Content Include="Views\MyUser\MyUser.cshtml" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="Views\MyUser\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\MyUser\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -942,6 +942,10 @@
     <ProjectReference Include="..\Application.DataLogicLayer\Application.DataLogicLayer.csproj">
       <Project>{913059b3-952b-4f9c-9d0f-87e2303df1cc}</Project>
       <Name>Application.DataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.LogicLayer\Application.LogicLayer.csproj">
+      <Project>{7c4a014f-ad45-4da3-bccc-1dec76148280}</Project>
+      <Name>Application.LogicLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

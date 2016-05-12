@@ -1,6 +1,6 @@
 ﻿using Application.LogicLayer.Interfaces.PersonInterfaces;
 
-namespace Application.LogicLayer.ImplementedClass
+namespace Application.LogicLayer.ImplementedClass.Models.PersonModel
 {
     public class PersonRequirements
     {

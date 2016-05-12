@@ -12,5 +12,6 @@ namespace Application.LogicLayer.HelpersData
         public float abdomen { get; set; }
         public float neck { get; set; }
         public float chest { get; set; }
+        public float hip { get; set; }
     }
 }

@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ExtendedUserIndexCalcController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyUserController.cs" />
     <Compile Include="Controllers\NavbarController.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ExtendedIndexesViewModel.cs" />
     <Compile Include="Models\Form.cs" />
     <Compile Include="Models\IndexesViewModel.cs" />
     <Compile Include="Models\Navbar.cs" />
@@ -936,6 +938,7 @@
     <Content Include="Views\MyUser\Index.cshtml" />
     <Content Include="Views\UserIndexCalc\BasicCalcData.cshtml" />
     <Content Include="Views\UserIndexCalc\_IndexesPartialView.cshtml" />
+    <Content Include="Views\ExtendedUserIndexCalc\ExtendedIndexView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,5 +13,7 @@ namespace Application.LogicLayer.Interfaces
          
          float chest { get; set; }
 
+        float hip { get; set; }
+
     }
 }

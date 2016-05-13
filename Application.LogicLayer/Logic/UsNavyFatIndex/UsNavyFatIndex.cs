@@ -20,14 +20,14 @@ namespace Application.LogicLayer.Logic.UsNavyFatIndex
 
             if (person.Sex == Sex.Male)
             {
-                dataNavy.PersonIndex = (float) ((float) (86.010*Math.Log10((double) person.DataForCalculatedNIndex.abdomen-
-                          person.DataForCalculatedNIndex.neck)-70.041 *Math.Log10(person.Heigh))+36.76);
+                dataNavy.PersonIndex = (float) ((float) (86.010*Math.Log10((double) person.DataForCalculatedNIndex.abdomen / 100 * 39.3700787 -
+                          person.DataForCalculatedNIndex.neck / 100 * 39.3700787) -70.041 *Math.Log10(person.Heigh / 100 * 39.3700787))+36.76);
             }
             else if (person.Sex == Sex.Female)
             {
-                dataNavy.PersonIndex = (float)((float)(163.205 * Math.Log10((double)person.DataForCalculatedNIndex.abdomen +
-                    person.DataForCalculatedNIndex.hip-
-                     person.DataForCalculatedNIndex.neck) - 97.684 * Math.Log10(person.Heigh)) -78.387);
+                dataNavy.PersonIndex = (float)((float)(163.205 * Math.Log10((double)person.DataForCalculatedNIndex.abdomen / 100 * 39.3700787 +
+                    person.DataForCalculatedNIndex.hip / 100 * 39.3700787 -
+                     person.DataForCalculatedNIndex.neck / 100 * 39.3700787) - 97.684 * Math.Log10(person.Heigh/100* 39.3700787)) -78.387);
             }
 
 

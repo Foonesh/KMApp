@@ -939,6 +939,7 @@
     <Content Include="Views\UserIndexCalc\BasicCalcData.cshtml" />
     <Content Include="Views\UserIndexCalc\_IndexesPartialView.cshtml" />
     <Content Include="Views\ExtendedUserIndexCalc\ExtendedIndexView.cshtml" />
+    <Content Include="Views\ExtendedUserIndexCalc\_CalcExtendedDataPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

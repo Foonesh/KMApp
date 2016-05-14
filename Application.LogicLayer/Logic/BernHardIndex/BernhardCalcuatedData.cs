@@ -7,7 +7,7 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.BernHardIndex
 {
-    class BernhardCalcuatedData:ICalculatedData
+    public class BernhardCalcuatedData:ICalculatedData
     {
         public BernhardCalcuatedData(float Index)
         {

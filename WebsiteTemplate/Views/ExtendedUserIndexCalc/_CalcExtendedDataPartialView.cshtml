@@ -1,0 +1,28 @@
+﻿@model Models.ExtendedIndexesViewModel
+
+<div>
+    <h4>ExtendedIndexesViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UsNavyFatIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsNavyFatIndex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BernhardIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BernhardIndex)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

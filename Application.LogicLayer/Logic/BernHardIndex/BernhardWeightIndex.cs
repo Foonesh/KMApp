@@ -9,7 +9,7 @@ using Application.LogicLayer.Interfaces;
 
 namespace Application.LogicLayer.Logic.BernHardIndex
 {
-    class BernhardWeightIndex:BodyWeightIndex
+    public class BernhardWeightIndex:BodyWeightIndex
     {
         public override ICalculatedData CalculateWeightIndex(PersonViewModel person)
         {

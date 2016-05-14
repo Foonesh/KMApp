@@ -6,12 +6,14 @@ using System.Web.Mvc;
 using Application.LogicLayer.Abstract;
 using Application.LogicLayer.HelpersData;
 using Application.LogicLayer.ImplementedClass;
+using Application.LogicLayer.Logic.BernHardIndex;
 using Application.LogicLayer.Logic.BMI;
 using Application.LogicLayer.Logic.BrockIndex;
 using Application.LogicLayer.Logic.LorentzIndex;
 using Application.LogicLayer.Logic.PottonIndex;
 using Application.LogicLayer.Logic.UsNavyFatIndex;
 using Application.LogicLayer.Logic.USLifeInsurenceIndex;
+using Models;
 
 namespace Controllers
 {
@@ -30,8 +32,8 @@ namespace Controllers
         {
             Dictionary<string, BodyWeightIndex> DictIndex = new Dictionary<string, BodyWeightIndex>()
             {
-                {"FatUsNavyIndex",new UsNavyFatIndex() }
-           
+                {"FatUsNavyIndex",new UsNavyFatIndex() },
+                {"BernahrdIndex" ,new BernhardWeightIndex()}
 
             };
 
@@ -40,8 +42,16 @@ namespace Controllers
             model.Weight=71;
             model.Sex=Sex.Male;
             model.Age=27;
+             
+            ExtendedIndexesViewModel viewExtendedModel = new ExtendedIndexesViewModel();
 
-            float fatpercent = DictIndex["FatUsNavyIndex"].CalculateWeightIndex(model).PersonIndex;
+            viewExtendedModel.UsNavyFatIndex= DictIndex["FatUsNavyIndex"].CalculateWeightIndex(model).PersonIndex;
+            viewExtendedModel.BernhardIndex = DictIndex["BernahrdIndex"].CalculateWeightIndex(model).PersonIndex;
+
+
+
+
+            return PartialView("_CalcExtendedDataPartialView", viewExtendedModel);
 
          
 
@@ -49,7 +59,7 @@ namespace Controllers
 
 
 
-            return Content(fatpercent.ToString());
+                                
         }
 
     }

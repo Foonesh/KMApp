@@ -21,7 +21,7 @@ namespace Controllers
         
         public ActionResult Get()
         {
-            using (DatabaseModel model = new DatabaseModel())
+            using (DatabaseNutrients model = new DatabaseNutrients())
             {
                 //var res = model.ABBREV.Select(item => item.Energ_Kcal > 10).Take(5).ToList();
 
